@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('pc.png');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .f {
+    background-color: white;
+    width: 270px;
+    padding-left: 18px;
+    padding-right: 20px;
+    padding-top: 10px;
+    border-radius: 1%;
+  }
+  
+  /* Remove margin and padding for .f since it's centered within the body */
+  
+  .i {
+    background-color: #f1f1f1;
+    border: none;
+    width: 266px;
+  }
+  
+  h1 {
+    font-weight: bold; /* Use font-weight to set the font as bold */
+    font-size: 18px;
+    text-align: center; /* Center the text within h1 */
+    margin-bottom: 17px;
+  }
+  
+  .b {
+    background-color: #373b3e;
+    margin-bottom: 10px;
+    margin-top: 33px;
+    width: 266px;
+    color: white;
+  }
+  
