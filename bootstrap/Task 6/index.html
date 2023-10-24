@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="data:image/png;base64,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" />
+  <title>Form</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+  <header style="position: fixed; width: 100%; z-index: 1;">
+
+    <nav class="navbar navbar-light" style="background-color: #ECF3F8" >
+
+
+
+      <nav class="navbar navbar-light bg-light">
+
+        <a class="navbar-brand" href="#">
+
+          <img src="https://eck23.github.io/buildmyweb/buildlogo.png" width="105" height="50" alt="logo">
+
+        </a>
+
+      </nav>
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+          <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item ">
+
+              <a class="nav-link" href="#carouselExampleControls">Home</a>
+
+            </li>
+
+            <li class="nav-item">
+
+              <a class="nav-link" href="#Mentors">Mentors</a>
+
+            </li>
+
+            <li class="nav-item">
+
+              <a class="nav-link" href="#section2">Register</a>
+
+            </li>
+
+            <li class="nav-item">
+
+              <a class="nav-link" href="#section3">Participate</a>
+
+            </li>
+
+            <li class="nav-item">
+
+              <a class="nav-link" href="#section3">Profile</a>
+
+            </li>
+
+           
+
+
+
+
+        </div>
+
+      </nav>
+
+    </nav>
+
+  </header>
+
+  <section style="padding-top: 5.5em; ">
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+
+          <img class="d-block w-100"
+            src="https://spiffy-fire-8ed.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F00607fab-2ebf-48a1-9db6-4b992ec36984%2Fa85ad47e-a262-495c-81ef-2415571c10ad%2Fcarousel.png?table=block&id=cb78cd60-0f00-4696-9162-e9313aa85e5c&spaceId=00607fab-2ebf-48a1-9db6-4b992ec36984&width=2000&userId=&cache=v2">
+
+        </div>
+
+        <div class="carousel-item">
+
+          <img class="d-block w-100"
+            src="https://spiffy-fire-8ed.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F00607fab-2ebf-48a1-9db6-4b992ec36984%2Ff926a3dd-2e2d-4777-9e34-f3fcc07e38a2%2Fcarousel2.png?table=block&id=19e94cad-a2f2-4310-a634-36010e5d110e&spaceId=00607fab-2ebf-48a1-9db6-4b992ec36984&width=2000&userId=&cache=v2">
+
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+          <span class="sr-only">Previous</span>
+
+        </a>
+
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+          <span class="sr-only">Next</span>
+
+        </a>
+
+      </div>
+
+      <br>
+
+
+
+      <h2 style="text-align:center;">Join us</h2>
+
+      <p style="text-align:center;">Pygrammers is a community of python enthusiasts with similar idealogies and interest
+      </p>
+
+      <div class="text-center">
+
+        <a class="btn btn-primary" href="https://telegram.me/pygrammers_official" role="button">Telegram</a>
+
+      </div>
+
+  </section>
+
+  <section>
+
+    <div class="container" id="section2">
+
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form class="p-4 bg-white shadow rounded">
+                        <fieldset class="mb-3">
+                            <legend  class="mb-4 text-center" ><b>Form:</b></legend>
+                            <div class="mb-3 text-center">
+                                <label for="exampleInputText1" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="exampleInputText1" placeholder="John Luther">
+                            </div>
+                            <div class="mb-3 text-center">
+                                <label for="exampleInputNumber1" class="form-label">Mobile Number</label>
+                                <input type="tel" class="form-control" id="exampleInputNumber1" placeholder="987654321">
+                            </div>
+                            <div class="mb-3 text-center">
+                                <label for="exampleInputEmail1" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="abcd@gmail.com">
+                            </div>
+                            <div class="mb-3 text-center">
+                                <label for="exampleInputText2" class="form-label">Company/Institution name</label>
+                                <input type="text" class ="form-control" id="exampleInputText2"  placeholder="Example.in">
+                            </div>
+                            <div class="mb-3 ps-4 text-start">
+                                <div class="form-text mb-2">Upload a short video or image of a handwritten sheet showing your interest to join build.myweb</div>
+                                <input type="file">
+                            </div>
+                            <div class="mb-3 text-center">
+                                <input type="number" class="form-control" placeholder="Have you attended any events by Pygrammers before?!">
+                            </div>
+                            <button type="submit" class="btn btn-secondary w-100">Submit </button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="container1" id="Mentors" style="margin: 0;">
+        <h5>Mentors</h5>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="./images.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="./images.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="./images.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="./images.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="./images.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="./images.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <footer class="text-center text-lg-start bg-light text-muted">
+    <div class="container">
+      <div class="container2">
+        <div class="row">
+          <div class="col-md-12">
+            <img
+              src="https://spiffy-fire-8ed.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F00607fab-2ebf-48a1-9db6-4b992ec36984%2Fdd2300ff-5cac-4f70-ab3d-1679bf597fbe%2Ffooter.png?table=block&id=cb3bac52-da3e-409c-b9c7-1f37091fa59f&spaceId=00607fab-2ebf-48a1-9db6-4b992ec36984&width=2000&userId=&cache=v2"
+              width="200" height="70">
+
+          </div>
+          </div>
+          <p style="color: rgb(22, 126, 211);"> <a href="https://github.com/AmaljithAchu"> Created by Vimal Vinod V. © 2023</a></p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

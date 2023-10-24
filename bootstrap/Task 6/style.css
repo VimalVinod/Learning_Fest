@@ -1,0 +1,100 @@
+
+.parent{
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 50px;
+
+
+
+}
+
+.child{
+
+    width: 600px;
+
+    height: 720px;
+
+    background-color: rgb(255, 255, 255);
+
+    padding: 25px;
+
+    font-family: sans-serif;
+
+    border-style: solid;
+
+    border-width: 1px;
+
+    border-color: lightgray;
+
+    text-align: left;
+
+}
+
+h3{
+
+    font-weight: bold;
+
+    padding: 10px;
+
+    text-align: center;
+
+}
+
+.btn1{
+
+  width: 150px;
+
+  background-color: floralwhite;
+
+  color: black;
+
+  border-style: none;
+
+}
+
+.container1{
+
+  background-color: lightcyan;
+
+}
+
+h5{
+
+  text-align: center;
+
+  margin-bottom: 20px;
+
+}
+
+.card{
+
+  margin: 0 auto;
+
+  margin-bottom: 100px;
+
+  background-color: lightcyan;
+
+  border-style: none;
+
+}
+
+.center{
+
+margin-left: auto;
+
+margin-right: auto;
+
+}
+
+.container2 {
+
+  text-align: center;
+
+  display: block;
+
+}
+
+
