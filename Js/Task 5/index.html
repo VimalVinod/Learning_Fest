@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <ul id="contents"></ul>
+    <script>
+        function fetchJSON() {
+            fetch('persons1.json')
+                .then(response => response.json())
+                .then(data => {
+                    const list=document.getElementById('contents')
+
+                    for(let i=0;i<data.length;i++){
+                        const name=data[i].name
+                        const age=data[i].age
+                        const listItem = document.createElement('li');
+                        listItem.innerHTML=`
+                            ${name}:${age}
+                        `;
+                        list.appendChild(listItem)
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching JSON:', error);
+                });
+        }
+
+        // Call the fetchJSON function to retrieve and display the JSON data
+        fetchJSON();
+    </script>
+</body>
+</html>
