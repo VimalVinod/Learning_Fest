@@ -1,0 +1,57 @@
+*{
+    margin: o;
+    padding: 0;
+}
+.nav-bar{
+    float: right;
+}
+.name-bar p span{
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.contact{
+    margin-left: 3rem;
+    padding-top: 6rem;
+    background-color: aqua;
+}
+h2{
+    color: #000;
+}
+
+img{
+    margin-top: 8rem;
+    height: 400px;
+    width: 400px;
+}
+
+@media (max-width: 576px) {
+    .iframe-class {
+      width: 350px;
+    }
+    .msg-img{
+        width: 350px;
+        height: 200px;
+        margin-top: 0;
+    }
+    
+  }
+  .form-control {
+    border: 2px solid rgba(0, 0, 0, 0.27);
+    border-radius: 30px;
+    width: 100%;
+    max-width: 100%;
+    height: 3em;
+    font-size: 16px;
+    padding: 1em;
+    margin: 0.5em 0 2em 0;
+    font-weight: bold;
+  }
+  .contact{
+    background-color: beige;
+  }
+  button{
+    border: tomato;
+  }
